@@ -1,5 +1,5 @@
 # agentBotNet
-Rewrite of agentBot to C# .NET
+Rewrite of agentBot from JS to C# .NET
 
 # agentBot
 Discord bot for Unmatched, a travian community.
