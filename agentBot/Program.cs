@@ -18,7 +18,7 @@ namespace agentBot
 
         public async Task StartAsync()
         {
-            if (Config.bot.token == "" || Config.bot.token == null) return;
+            if (string.IsNullOrEmpty(Config.bot.token)) return;
             _client = new DiscordSocketClient(new DiscordSocketConfig
             {
                 LogLevel = LogSeverity.Verbose

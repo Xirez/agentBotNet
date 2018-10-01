@@ -24,5 +24,19 @@ namespace agentBot
             if (alerts.ContainsKey(key)) return alerts[key];
             return "";
         }
+
+        public static string GetFormattedAlert(string key, params object[] parameter)
+        {
+            if (alerts.ContainsKey(key))
+            {
+                return String.Format(alerts[key], parameter);
+            }
+            return "";
+        }
+
+        public static string GetFormattedAlert(string key, object parameter)
+        {
+            return GetFormattedAlert(key, new object[] { parameter});
+        }
     }
 }

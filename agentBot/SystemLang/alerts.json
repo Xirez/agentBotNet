@@ -1,3 +1,5 @@
 {
-    "TEST":"Hello World"
+  "TEST": "Hello World",
+  "WELCOME_&NAME": "Hello, {0}. Use the !info command to see what we can do together!{1}{2}",
+  "SECRET": "This is a command hidden behind permission rankings."
 }
